@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-module for the test console
-that contain the class TestHBNBCommand class
-"""
+"""module to test the console/ TestCommand"""
 
 from console import HBNBCommand
 from models.engine.file_storage import FileStorage
@@ -21,7 +18,7 @@ class TestCommand(unittest.TestCase):
     """a class for tests re: HBNBCommand console"""
 
     attribute_values = {
-        str: "shakedown1979",
+        str: "foobar108",
         int: 1008,
         float: 1.08
     }
@@ -33,9 +30,9 @@ class TestCommand(unittest.TestCase):
     }
 
     test_random_attributes = {
-        "school": "holberton",
-        "mission": 972,
-        "float": 9.8
+        "strfoo": "barfoo",
+        "intfoo": 248,
+        "floatfoo": 9.8
     }
 
     def setUp(self):
